@@ -1,0 +1,355 @@
+
+
+/* General page design */
+
+* {
+
+  box-sizing: border-box;
+
+  margin: 0;
+
+  padding: 0;
+
+}
+
+body {
+
+  font-family: Arial, sans-serif;
+
+  background-color: #f0fdf4;
+
+  color: #1f2937;
+
+  line-height: 1.6;
+
+}
+
+/* School header */
+
+.header {
+
+  background: linear-gradient(135deg, #064e3b, #059669);
+
+  color: white;
+
+  text-align: center;
+
+  padding: 30px 15px;
+
+}
+
+.header h1 {
+
+  font-size: 30px;
+
+  letter-spacing: 2px;
+
+}
+
+.header h2 {
+
+  font-size: 21px;
+
+  margin: 5px 0;
+
+}
+
+.header p {
+
+  color: #d1fae5;
+
+}
+
+/* Main content */
+
+.container {
+
+  width: 92%;
+
+  max-width: 650px;
+
+  margin: 25px auto;
+
+}
+
+.welcome {
+
+  text-align: center;
+
+  margin-bottom: 22px;
+
+}
+
+.welcome h2 {
+
+  color: #047857;
+
+  margin-bottom: 8px;
+
+}
+
+.notice {
+
+  color: #047857;
+
+  font-size: 14px;
+
+  margin-top: 8px;
+
+}
+
+/* Voting form and results */
+
+#votingForm,
+
+.results {
+
+  background: white;
+
+  padding: 22px;
+
+  border-radius: 14px;
+
+  margin-bottom: 22px;
+
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+
+}
+
+#votingForm h3,
+
+.results h3 {
+
+  color: #065f46;
+
+  margin-bottom: 14px;
+
+}
+
+#votingForm > label {
+
+  display: block;
+
+  font-weight: bold;
+
+  margin-bottom: 6px;
+
+}
+
+#studentId {
+
+  width: 100%;
+
+  padding: 13px;
+
+  border: 1px solid #cbd5e1;
+
+  border-radius: 8px;
+
+  font-size: 16px;
+
+  margin-bottom: 22px;
+
+}
+
+/* Candidate cards */
+
+.candidate-list {
+
+  display: grid;
+
+  gap: 12px;
+
+  margin: 15px 0 22px;
+
+}
+
+.candidate {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 13px;
+
+  padding: 15px;
+
+  border: 2px solid #d1d5db;
+
+  border-radius: 10px;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+
+}
+
+.candidate:has(input:checked) {
+
+  border-color: #059669;
+
+  background: #ecfdf5;
+
+}
+
+.candidate input {
+
+  width: 20px;
+
+  height: 20px;
+
+  accent-color: #059669;
+
+  flex-shrink: 0;
+
+}
+
+.candidate span {
+
+  display: flex;
+
+  flex-direction: column;
+
+}
+
+.candidate strong {
+
+  font-size: 16px;
+
+}
+
+.candidate small {
+
+  color: #64748b;
+
+}
+
+/* Submit button */
+
+#submitVote {
+
+  width: 100%;
+
+  padding: 15px;
+
+  background: #047857;
+
+  color: white;
+
+  border: none;
+
+  border-radius: 9px;
+
+  font-size: 16px;
+
+  font-weight: bold;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+
+}
+
+#submitVote:hover {
+
+  background: #065f46;
+
+}
+
+#submitVote:active {
+
+  transform: scale(0.98);
+
+}
+
+#message {
+
+  margin-top: 15px;
+
+  overflow-wrap: anywhere;
+
+  font-weight: bold;
+
+}
+
+/* Results display */
+
+.result-row {
+
+  margin: 14px 0;
+
+}
+
+.result-bar {
+
+  height: 12px;
+
+  background: #d1fae5;
+
+  border-radius: 8px;
+
+  overflow: hidden;
+
+  margin-top: 5px;
+
+}
+
+.result-fill {
+
+  height: 100%;
+
+  background: #059669;
+
+  transition: width 0.4s ease;
+
+}
+
+/* Footer */
+
+footer {
+
+  text-align: center;
+
+  padding: 20px;
+
+  background: #064e3b;
+
+  color: white;
+
+  font-size: 13px;
+
+}
+
+/* Mobile phone layout */
+
+@media (max-width: 480px) {
+
+  .header h1 {
+
+    font-size: 25px;
+
+  }
+
+  .header h2 {
+
+    font-size: 18px;
+
+  }
+
+  #votingForm,
+
+  .results {
+
+    padding: 17px;
+
+  }
+
+  .container {
+
+    width: 94%;
+
+    margin: 18px auto;
+
+  }
+
+}
