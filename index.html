@@ -1,0 +1,143 @@
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Adubia JHS SRC Election 2026</title>
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <header class="header">
+
+    <h1>ADUBIA JHS</h1>
+
+    <p>Electronic SRC Election 2026</p>
+
+    <small>Vote Wisely, Choose Your Leaders!</small>
+
+  </header>
+
+  <main class="container">
+
+    <section class="welcome">
+
+      <h2>Cast Your Vote</h2>
+
+      <p>Choose the candidate you want to represent you.</p>
+
+    </section>
+
+    <form id="votingForm">
+
+      <label for="studentId">Student ID</label>
+
+      <input
+
+        type="text"
+
+        id="studentId"
+
+        placeholder="Enter your student ID"
+
+        required
+
+      >
+
+      <h3>Presidential Candidates</h3>
+
+      <p>Select ONE candidate below.</p>
+
+      <div class="candidate-list">
+
+        <label class="candidate">
+
+          <input type="radio" name="president" value="Candidate A">
+
+          <div>
+
+            <h4>Candidate A</h4>
+
+            <p>Presidential Candidate</p>
+
+          </div>
+
+        </label>
+
+        <label class="candidate">
+
+          <input type="radio" name="president" value="Candidate B">
+
+          <div>
+
+            <h4>Candidate B</h4>
+
+            <p>Presidential Candidate</p>
+
+          </div>
+
+        </label>
+
+        <label class="candidate">
+
+          <input type="radio" name="president" value="Candidate C">
+
+          <div>
+
+            <h4>Candidate C</h4>
+
+            <p>Presidential Candidate</p>
+
+          </div>
+
+        </label>
+
+      </div>
+
+      <button type="submit" class="vote-btn">
+
+        SUBMIT VOTE
+
+      </button>
+
+      <p id="message" role="status" aria-live="polite"></p>
+
+    </form>
+
+    <section class="results">
+
+      <h3>Demo Election Results</h3>
+
+      <p id="resultsMessage">
+
+        Results will appear after a vote is submitted.
+
+      </p>
+
+      <div id="resultsList"></div>
+
+    </section>
+
+  </main>
+
+  <footer>
+
+    <p>© 2026 Adubia JHS | SRC Election</p>
+
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
